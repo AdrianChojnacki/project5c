@@ -1,0 +1,23 @@
+body {
+  margin: 5vw;
+  font-family: "arial";
+  text-align: center;
+}
+
+label,
+input {
+  height: 40px;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+div {
+  margin: 20px;
+  border: 2px solid black;
+  font-size: 40px;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
