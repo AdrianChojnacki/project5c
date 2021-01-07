@@ -6,14 +6,19 @@ const div = document.querySelector(`div`);
 const passwords = ["jedEN", "DwA"];
 const messages = ["super", "działa!"];
 
+// Lowercase passwords
+passwords.forEach((password, index) => {
+  passwords[index] = password.toLowerCase();
+});
+
 // Input function
 const showMessage = (e) => {
   div.textContent = "";
 
-  const value = e.target.value;
+  const value = e.target.value.toLowerCase();
 
   passwords.forEach((password, index) => {
-    if (value.toLowerCase() === password.toLowerCase()) {
+    if (value === password) {
       div.textContent = messages[index];
       e.target.value = "";
     }
